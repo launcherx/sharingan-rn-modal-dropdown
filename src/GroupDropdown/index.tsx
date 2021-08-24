@@ -47,6 +47,8 @@ const GroupDropdown: React.FC<IGroupDropdownProps> = props => {
     borderRadius,
     activityIndicatorColor,
     searchPlaceholder,
+    textInputPlaceholder,
+    textInputPlaceholderColor,
     helperText,
     errorColor,
     itemTextStyle,
@@ -303,6 +305,8 @@ const GroupDropdown: React.FC<IGroupDropdownProps> = props => {
             >
               <TextInput
                 label={labelAction()}
+                placeholder={textInputPlaceholder}
+                placeholderTextColor={textInputPlaceholderColor}
                 value={labelv}
                 style={[styles.textInput, textInputStyle]}
                 underlineColor={underlineColor}
